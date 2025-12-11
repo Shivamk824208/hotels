@@ -9,6 +9,7 @@ const mongoURL = process.env.MONGODB_URL;
 console.log("Loaded URI:", mongoURL);
 //set up mongoDB connection
 mongoose.connect(process.env.MONGODB_URL, {
+    
     serverSelectionTimeoutMS: 10000
 })
 .then(() => console.log("MongoDB connected"))
